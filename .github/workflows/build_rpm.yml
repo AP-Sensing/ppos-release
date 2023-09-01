@@ -22,7 +22,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3.1.0
     - name: Install Dependencies
-      run: dnf install -y rpmdevtools sed
+      run: dnf install -y rpmdevtools sed systemd-rpm-macros
     - name: Setup Build Environment
       run: |
         rm -rf ~/rpmbuild/
